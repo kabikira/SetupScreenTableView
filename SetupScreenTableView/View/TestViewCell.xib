@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TestViewCell" customModule="SetupScreenTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJR-cq-9Ol">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VY4-qK-5WP">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esP-X8-D96">
+                                    <rect key="frame" x="6" y="6" width="68" height="88"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="GPn-tX-iYg"/>
+                                <constraint firstItem="esP-X8-D96" firstAttribute="top" secondItem="VY4-qK-5WP" secondAttribute="top" constant="6" id="PHl-WZ-RHs"/>
+                                <constraint firstAttribute="bottom" secondItem="esP-X8-D96" secondAttribute="bottom" constant="6" id="TaP-Ry-0Pz"/>
+                                <constraint firstAttribute="trailing" secondItem="esP-X8-D96" secondAttribute="trailing" constant="6" id="uWY-7L-heT"/>
+                                <constraint firstItem="esP-X8-D96" firstAttribute="leading" secondItem="VY4-qK-5WP" secondAttribute="leading" constant="6" id="woa-Ny-zHS"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-yy-DwK">
+                            <rect key="frame" x="80" y="0.0" width="313" height="100"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txW-eu-fvq">
+                                    <rect key="frame" x="6" y="0.0" width="307" height="100"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="txW-eu-fvq" secondAttribute="trailing" id="2ns-KW-kNU"/>
+                                <constraint firstAttribute="bottom" secondItem="txW-eu-fvq" secondAttribute="bottom" id="MaE-LK-sy0"/>
+                                <constraint firstItem="txW-eu-fvq" firstAttribute="top" secondItem="4jW-yy-DwK" secondAttribute="top" id="kmS-id-NEW"/>
+                                <constraint firstItem="txW-eu-fvq" firstAttribute="leading" secondItem="4jW-yy-DwK" secondAttribute="leading" constant="6" id="tvn-Fw-3Xb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BJR-cq-9Ol" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J9Y-vZ-WdU"/>
+                <constraint firstItem="BJR-cq-9Ol" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" priority="750" id="THr-TG-BZU"/>
+                <constraint firstAttribute="trailing" secondItem="BJR-cq-9Ol" secondAttribute="trailing" id="lVo-Z5-xZ9"/>
+                <constraint firstItem="BJR-cq-9Ol" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tPr-5L-wH5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emojiLabel" destination="esP-X8-D96" id="yzh-u5-uzD"/>
+                <outlet property="titleLabel" destination="txW-eu-fvq" id="PL5-cW-Mrk"/>
+            </connections>
+            <point key="canvasLocation" x="116.79389312977099" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
